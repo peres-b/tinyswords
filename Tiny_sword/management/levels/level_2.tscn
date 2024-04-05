@@ -1,0 +1,274 @@
+[gd_scene load_steps=4 format=3 uid="uid://bas5rlx06aby3"]
+
+[ext_resource type="PackedScene" uid="uid://tcsq65prqnit" path="res://Tiny_sword/management/levels/level_1.tscn" id="1_i0oc1"]
+[ext_resource type="PackedScene" uid="uid://dxkhiua25io0e" path="res://Tiny_sword/Goblin/goblin.tscn" id="2_uma8f"]
+[ext_resource type="PackedScene" uid="uid://ce4l8hlnk32v4" path="res://Tiny_sword/management/tree.tscn" id="3_kf1a5"]
+
+[node name="level2" instance=ExtResource("1_i0oc1")]
+target_kill_count = 4
+next_level_scene_path = "res://Tiny_sword/management/credits.tscn"
+current_level_scene_path = "res://Tiny_sword/management/levels/level_2.tscn"
+
+[node name="Grass" parent="Terrain" index="1"]
+layer_0/tile_data = PackedInt32Array(327687, 131072, 1, 262151, 65536, 1, 196615, 65536, 1, 327686, 65536, 1, 262150, 65536, 1, 196614, 65536, 1, 327685, 65536, 1, 262149, 65536, 1, 196613, 65536, 1, 327684, 65536, 1, 262148, 65536, 1, 196612, 65536, 1, 327694, 65536, 0, 131086, 65536, 2, 65550, 65536, 1, 327693, 0, 0, 196621, 131072, 2, 131085, 65536, 1, 65549, 65536, 1, 196620, 0, 2, 131084, 65536, 1, 65548, 65536, 1, 131083, 65536, 2, 65547, 65536, 1, 131082, 65536, 2, 65546, 65536, 1, 196617, 131072, 2, 131081, 65536, 1, 65545, 65536, 1, 655367, 65536, 2, 589831, 65536, 1, 524295, 65536, 1, 655366, 65536, 2, 589830, 65536, 1, 524294, 65536, 1, 655365, 65536, 2, 589829, 65536, 1, 524293, 65536, 1, 655364, 0, 2, 589828, 65536, 1, 524292, 65536, 1, 589827, 0, 2, 524291, 0, 1, 851970, 131072, 2, 786434, 131072, 0, 851969, 0, 2, 786433, 0, 0, 262152, 131072, 2, 393221, 65536, 1, 393220, 65536, 1, 458756, 65536, 1, 458757, 65536, 1, 458755, 65536, 1, 393219, 65536, 1, 458759, 65536, 1, 458758, 65536, 1, 393222, 65536, 1, 393223, 65536, 1, 655368, 65536, 2, 589832, 65536, 1, 458766, 65536, 2, 458765, 0, 2, 589836, 131072, 2, 524300, 131072, 0, 589835, 0, 2, 524299, 0, 0, 655369, 131072, 2, 589833, 131072, 1, 458767, 65536, 1, 524303, 0, 2, 393229, 0, 1, 393224, 131072, 0, 720917, 131072, 2, 655381, 131072, 1, 720916, 65536, 2, 655380, 65536, 1, -131063, 65536, 1, -196599, 65536, 0, -131064, 65536, 1, -196600, 65536, 0, -131065, 65536, 1, -196601, 65536, 1, -262137, 131072, 0, -131066, 65536, 1, -196602, 65536, 1, -262138, 65536, 1, -131067, 65536, 1, -196603, 65536, 1, -262139, 65536, 1, -131068, 0, 1, -196604, 0, 1, -262140, 0, 1, 327683, 65536, 1, 262147, 65536, 1, 458754, 65536, 2, 393218, 65536, 1, 327682, 65536, 1, 262146, 65536, 0, 458753, 65536, 2, 393217, 65536, 1, 327681, 65536, 1, 262145, 65536, 0, 458752, 0, 2, 393216, 0, 1, 327680, 0, 1, 262144, 0, 0, 1245198, 65536, 2, 1179662, 65536, 1, 1114126, 65536, 1, 1048590, 65536, 1, 983054, 65536, 1, 1245197, 0, 2, 1179661, 65536, 1, 1114125, 65536, 1, 1048589, 65536, 1, 983053, 65536, 1, 1179660, 65536, 2, 1114124, 65536, 1, 1048588, 65536, 1, 983052, 65536, 1, 1179659, 0, 2, 1114123, 65536, 1, 1048587, 65536, 1, 983051, 65536, 1, 1114122, 0, 2, 1048586, 65536, 1, 983050, 65536, 1, 1048585, 0, 2, 983049, 0, 1, 1245199, 65536, 2, 1114127, 65536, 1, 1048591, 65536, 1, 1114128, 65536, 1, 1179663, 65536, 1, 1048593, 131072, 1, 1114129, 131072, 1, 1179664, 65536, 1, 1179665, 131072, 2, 1245200, 131072, 2, 1048592, 65536, 1, 983055, 65536, 1, 983056, 65536, 1, 917520, 65536, 1, 917518, 65536, 1, 851982, 65536, 1, 851981, 65536, 1, 917517, 65536, 1, 917516, 65536, 1, 786446, 65536, 1, 786447, 65536, 1, 917519, 65536, 1, 851983, 65536, 1, 851984, 65536, 1, 851980, 65536, 1, 917515, 65536, 1, 917514, 65536, 1, 851978, 0, 0, 851979, 65536, 1, 786443, 0, 0, 786444, 65536, 0, 917513, 0, 0, 786445, 65536, 0, 524297, 131072, 1, 458761, 131072, 0, 524296, 65536, 1, 458760, 65536, 1, 13, 65536, 1, -65523, 65536, 1, -131059, 131072, 1, -196595, 131072, 0, 12, 65536, 1, -65524, 65536, 1, -131060, 65536, 1, -196596, 65536, 0, 11, 65536, 1, -65525, 65536, 1, -131061, 65536, 1, -196597, 65536, 0, 10, 65536, 1, -65526, 65536, 1, -131062, 65536, 1, -196598, 65536, 0, 9, 65536, 1, -65527, 65536, 1, 131080, 65536, 1, 65544, 65536, 1, 8, 65536, 1, -65528, 65536, 1, 131079, 65536, 1, 65543, 65536, 1, 7, 65536, 1, -65529, 65536, 1, 131078, 65536, 1, 65542, 65536, 1, 6, 65536, 1, -65530, 65536, 1, 131077, 65536, 1, 65541, 0, 1, 5, 0, 1, -65531, 65536, 1, 196611, 0, 0, 131076, 0, 1, 196616, 65536, 1, -65532, 0, 2, -327676, 0, 0, -327674, 131072, 0, -327675, 65536, 0, 262164, 65536, 1, 196628, 65536, 1, 131092, 65536, 1, 65556, 65536, 1, 20, 131072, 1, -65516, 131072, 0, 262163, 65536, 1, 196627, 65536, 1, 131091, 65536, 1, 65555, 65536, 1, 19, 65536, 1, -65517, 65536, 0, 262162, 65536, 1, 196626, 65536, 1, 131090, 65536, 1, 65554, 65536, 1, 18, 65536, 1, -65518, 65536, 0, 262161, 65536, 1, 196625, 65536, 1, 131089, 65536, 1, 65553, 65536, 1, 17, 65536, 1, -65519, 65536, 0, 262160, 65536, 1, 196624, 65536, 1, 131088, 65536, 1, 65552, 65536, 1, 16, 65536, 1, -65520, 65536, 0, 262159, 0, 1, 196623, 0, 1, 131087, 65536, 1, 65551, 65536, 1, 15, 65536, 1, -65521, 65536, 0, 14, 65536, 1, -65522, 65536, 0, 196629, 65536, 1, 196630, 131072, 0, 262166, 131072, 1, 65557, 131072, 0, 262165, 65536, 1, 327701, 65536, 1, 327700, 65536, 1, 327699, 65536, 1, 327698, 65536, 1, 327697, 65536, 1, 393233, 65536, 1, 393232, 65536, 1, 327696, 65536, 1, 458768, 65536, 1, 393234, 65536, 1, 393231, 65536, 1, 327695, 65536, 1, 393230, 65536, 1, 589845, 131072, 1, 524309, 131072, 1, 458773, 131072, 1, 393237, 131072, 1, 589844, 65536, 1, 524308, 65536, 1, 458772, 65536, 1, 393236, 65536, 1, 720915, 65536, 1, 655379, 65536, 1, 589843, 65536, 1, 524307, 65536, 1, 458771, 65536, 1, 393235, 65536, 1, 720914, 65536, 1, 655378, 65536, 1, 589842, 65536, 1, 524306, 65536, 1, 458770, 65536, 1, 720913, 65536, 1, 655377, 65536, 1, 589841, 65536, 1, 524305, 65536, 1, 458769, 65536, 1, 720912, 65536, 1, 655376, 65536, 1, 589840, 0, 1, 524304, 65536, 1, 786451, 131072, 2, 786450, 65536, 1, 851986, 131072, 2, 851985, 65536, 1, 917521, 131072, 1, 983057, 131072, 1, 786449, 65536, 1, 786448, 65536, 1, 720911, 65536, 1, 720910, 0, 0, 655375, 0, 0, 131093, 131072, 1, 327702, 131072, 2, -524281, 0, 2, -524280, 65536, 2, -524279, 65536, 1, -458743, 0, 2, -458742, 65536, 2, -458741, 65536, 2, -458740, 65536, 1, -393204, 0, 2, -393203, 65536, 1, -393202, 65536, 1, -327666, 65536, 2, -327665, 65536, 2, -327664, 65536, 1, -262128, 0, 2, -262127, 65536, 2, -262126, 65536, 2, -262125, 65536, 2, -262124, 65536, 2, -262123, 65536, 2, -262122, 65536, 2, -262121, 65536, 2, -327657, 65536, 1, -393193, 65536, 1, -458729, 65536, 1, -524265, 65536, 1, -589801, 65536, 1, -327658, 65536, 1, -393194, 65536, 1, -458730, 65536, 1, -524266, 65536, 1, -589802, 65536, 1, -327659, 65536, 1, -393195, 65536, 1, -458731, 65536, 1, -524267, 65536, 1, -589803, 65536, 1, -327660, 65536, 1, -393196, 65536, 1, -458732, 65536, 1, -524268, 65536, 1, -589804, 65536, 1, -327661, 65536, 1, -393197, 65536, 1, -458733, 65536, 1, -524269, 65536, 1, -589805, 65536, 1, -327662, 65536, 1, -393198, 65536, 1, -458734, 65536, 1, -524270, 65536, 1, -589806, 65536, 1, -327663, 65536, 1, -393199, 65536, 1, -458735, 65536, 1, -524271, 65536, 1, -589807, 65536, 1, -393200, 65536, 1, -458736, 65536, 1, -524272, 65536, 1, -589808, 65536, 1, -393201, 65536, 1, -458737, 65536, 1, -524273, 65536, 1, -589809, 65536, 1, -458738, 65536, 1, -524274, 65536, 1, -589810, 65536, 1, -458739, 65536, 1, -524275, 65536, 1, -589811, 65536, 1, -589812, 65536, 1, -655348, 65536, 0, -655349, 65536, 0, -655350, 65536, 0, -655351, 65536, 0, -655352, 65536, 0, -589816, 65536, 1, -589817, 0, 1, -589815, 65536, 1, -589814, 65536, 1, -589813, 65536, 1, -524277, 65536, 1, -524278, 65536, 1, -524276, 65536, 1, -655353, 0, 0, -655347, 65536, 0, -655346, 65536, 0, -655345, 65536, 0, -655343, 65536, 0, -655342, 65536, 0, -655341, 65536, 0, -655340, 65536, 0, -655344, 65536, 0, -655339, 65536, 0, -655338, 65536, 0, -655337, 65536, 1, -720873, 196608, 0, -589800, 65536, 1, -524264, 65536, 1, -458728, 65536, 1, -393192, 65536, 1, -393191, 65536, 1, -327656, 65536, 1, -327655, 65536, 1, -393190, 65536, 1, -458727, 65536, 1, -524263, 131072, 1, -589799, 131072, 1, -655335, 131072, 0, -327667, 0, 2, -131044, 65536, 1, -196580, 65536, 1, -262116, 65536, 1, -327652, 65536, 1, -131045, 65536, 1, -196581, 65536, 1, -262117, 65536, 1, -327653, 65536, 1, -131046, 65536, 2, -196582, 65536, 1, -262118, 65536, 1, -327654, 65536, 1, -131047, 0, 2, -196583, 0, 1, -262119, 65536, 1, -262120, 65536, 2, -131043, 131072, 1, -65507, 131072, 1, 29, 131072, 1, 28, 65536, 1, -65508, 65536, 1, -65509, 0, 1, 27, 0, 1, 65563, 0, 2, 65565, 131072, 2, 65564, 65536, 2, -327651, 131072, 0, -262115, 131072, 1, -196579, 131072, 1, -393188, 65536, 0, -393189, 65536, 0, -458726, 131072, 0, -655336, 65536, 0, 524281, 131072, 2, 458745, 131072, 1, 393209, 131072, 1, 327673, 131072, 0, 524280, 65536, 2, 458744, 65536, 1, 393208, 65536, 1, 327672, 65536, 0, 524279, 65536, 2, 458743, 65536, 1, 393207, 65536, 1, 327671, 65536, 0, 524278, 65536, 2, 458742, 65536, 1, 393206, 65536, 1, 327670, 65536, 0, 524277, 0, 2, 458741, 0, 1, 393205, 0, 1, 327669, 0, 0)
+
+[node name="Decoration" parent="Terrain" index="2"]
+layer_0/tile_data = PackedInt32Array(196612, 0, 0, 589840, 2, 0, 262164, 2, 0, 458772, 2, 0, 9, 2, 0, -131065, 2, 0, -327676, 2, 0, 524291, 2, 0, 524292, 2, 0, 393222, 0, 0, 65548, 0, 0, 19, 0, 0, -131062, 0, 0, 589830, 0, 0, 393232, 0, 0, 196625, 0, 0, 720916, 0, 0, 524309, 4, 0, 262163, 4, 0, -196602, 4, 0, 589828, 3, 0, 589831, 3, 0, 458760, 3, 0, 1114124, 2, 0, 851983, 2, 0, 851980, 1, 0, 1245198, 1, 0, 983056, 4, 0, 1048585, 4, 0, 589835, 5, 0)
+
+[node name="Goblin" parent="." index="1"]
+position = Vector2(351, -198)
+
+[node name="Goblin2" parent="." index="2"]
+position = Vector2(1089, 640)
+
+[node name="Knight" parent="." index="3"]
+position = Vector2(64, 370)
+
+[node name="Goblin3" parent="." index="4" instance=ExtResource("2_uma8f")]
+light_mask = 2
+visibility_layer = 5
+position = Vector2(910, 801)
+collision_mask = 5
+
+[node name="Goblin4" parent="." index="5" instance=ExtResource("2_uma8f")]
+light_mask = 2
+visibility_layer = 5
+position = Vector2(1105, 915)
+collision_mask = 5
+
+[node name="Tree4" parent="Decoration" index="0"]
+position = Vector2(418, 53)
+
+[node name="Tree5" parent="Decoration" index="1"]
+position = Vector2(476, 73)
+
+[node name="Tree6" parent="Decoration" index="2"]
+position = Vector2(341, -9)
+
+[node name="Tree7" parent="Decoration" index="3"]
+position = Vector2(457, -83)
+
+[node name="Tree8" parent="Decoration" index="4"]
+position = Vector2(560, -81)
+
+[node name="Tree9" parent="Decoration" index="5"]
+position = Vector2(542, 84)
+
+[node name="Tree10" parent="Decoration" index="6"]
+position = Vector2(594, 672)
+
+[node name="Tree11" parent="Decoration" index="7"]
+position = Vector2(932, 428)
+
+[node name="Tree12" parent="Decoration" index="8"]
+position = Vector2(1006, 712)
+
+[node name="Tree13" parent="Decoration" index="9"]
+position = Vector2(1066, 712)
+
+[node name="Tree14" parent="Decoration" index="10"]
+position = Vector2(1147, 684)
+
+[node name="Tree15" parent="Decoration" index="11"]
+position = Vector2(1116, 710)
+
+[node name="Tree26" parent="Decoration" index="12" instance=ExtResource("3_kf1a5")]
+position = Vector2(1057, -234)
+
+[node name="Tree27" parent="Decoration" index="13" instance=ExtResource("3_kf1a5")]
+position = Vector2(1136, -230)
+
+[node name="Tree28" parent="Decoration" index="14" instance=ExtResource("3_kf1a5")]
+position = Vector2(1210, -226)
+
+[node name="Tree29" parent="Decoration" index="15" instance=ExtResource("3_kf1a5")]
+position = Vector2(1276, -226)
+
+[node name="Tree30" parent="Decoration" index="16" instance=ExtResource("3_kf1a5")]
+position = Vector2(1347, -226)
+
+[node name="Tree31" parent="Decoration" index="17" instance=ExtResource("3_kf1a5")]
+position = Vector2(1415, -222)
+
+[node name="Tree32" parent="Decoration" index="18" instance=ExtResource("3_kf1a5")]
+position = Vector2(1490, -222)
+
+[node name="Tree33" parent="Decoration" index="19" instance=ExtResource("3_kf1a5")]
+position = Vector2(1554, -219)
+
+[node name="Tree34" parent="Decoration" index="20" instance=ExtResource("3_kf1a5")]
+position = Vector2(1618, -191)
+
+[node name="Tree35" parent="Decoration" index="21" instance=ExtResource("3_kf1a5")]
+position = Vector2(1641, -147)
+
+[node name="Tree36" parent="Decoration" index="22" instance=ExtResource("3_kf1a5")]
+position = Vector2(1659, -93)
+
+[node name="Tree37" parent="Decoration" index="23" instance=ExtResource("3_kf1a5")]
+position = Vector2(1717, -85)
+
+[node name="Tree38" parent="Decoration" index="24" instance=ExtResource("3_kf1a5")]
+position = Vector2(1724, -161)
+
+[node name="Tree39" parent="Decoration" index="25" instance=ExtResource("3_kf1a5")]
+position = Vector2(1789, -95)
+
+[node name="Tree40" parent="Decoration" index="26" instance=ExtResource("3_kf1a5")]
+position = Vector2(1763, -31)
+
+[node name="Tree41" parent="Decoration" index="27" instance=ExtResource("3_kf1a5")]
+position = Vector2(994, -297)
+
+[node name="Tree42" parent="Decoration" index="28" instance=ExtResource("3_kf1a5")]
+position = Vector2(1829, -6)
+
+[node name="Tree43" parent="Decoration" index="29" instance=ExtResource("3_kf1a5")]
+position = Vector2(1762, 65)
+
+[node name="Tree44" parent="Decoration" index="30" instance=ExtResource("3_kf1a5")]
+position = Vector2(1878, 52)
+
+[node name="Tree45" parent="Decoration" index="31" instance=ExtResource("3_kf1a5")]
+position = Vector2(1842, 88)
+
+[node name="Tree16" parent="Decoration" index="32" instance=ExtResource("3_kf1a5")]
+position = Vector2(1365, 391)
+
+[node name="Tree17" parent="Decoration" index="33" instance=ExtResource("3_kf1a5")]
+position = Vector2(1314, 421)
+
+[node name="Tree18" parent="Decoration" index="34" instance=ExtResource("3_kf1a5")]
+position = Vector2(1259, 434)
+
+[node name="Tree19" parent="Decoration" index="35" instance=ExtResource("3_kf1a5")]
+position = Vector2(1197, 449)
+
+[node name="Tree20" parent="Decoration" index="36" instance=ExtResource("3_kf1a5")]
+position = Vector2(1213, 325)
+
+[node name="Tree21" parent="Decoration" index="37" instance=ExtResource("3_kf1a5")]
+position = Vector2(1242, 517)
+
+[node name="Tree22" parent="Decoration" index="38" instance=ExtResource("3_kf1a5")]
+position = Vector2(1289, 588)
+
+[node name="Tree23" parent="Decoration" index="39" instance=ExtResource("3_kf1a5")]
+position = Vector2(1362, 515)
+
+[node name="Tree24" parent="Decoration" index="40" instance=ExtResource("3_kf1a5")]
+position = Vector2(1341, 644)
+
+[node name="Tree25" parent="Decoration" index="41" instance=ExtResource("3_kf1a5")]
+position = Vector2(1241, 808)
+
+[node name="Tree61" parent="Decoration" index="42" instance=ExtResource("3_kf1a5")]
+position = Vector2(911, 976)
+
+[node name="Tree62" parent="Decoration" index="43" instance=ExtResource("3_kf1a5")]
+position = Vector2(911, 1026)
+
+[node name="Tree63" parent="Decoration" index="44" instance=ExtResource("3_kf1a5")]
+position = Vector2(667, 930)
+
+[node name="Tree64" parent="Decoration" index="45" instance=ExtResource("3_kf1a5")]
+position = Vector2(623, 972)
+
+[node name="Tree65" parent="Decoration" index="46" instance=ExtResource("3_kf1a5")]
+position = Vector2(681, 1008)
+
+[node name="Tree66" parent="Decoration" index="47" instance=ExtResource("3_kf1a5")]
+position = Vector2(1117, 1114)
+
+[node name="Tree67" parent="Decoration" index="48" instance=ExtResource("3_kf1a5")]
+position = Vector2(1069, 1152)
+
+[node name="Tree68" parent="Decoration" index="49" instance=ExtResource("3_kf1a5")]
+position = Vector2(1125, 1192)
+
+[node name="Tree46" parent="Decoration" index="50" instance=ExtResource("3_kf1a5")]
+position = Vector2(1077, -336)
+
+[node name="Tree47" parent="Decoration" index="51" instance=ExtResource("3_kf1a5")]
+position = Vector2(1175, -341)
+
+[node name="Tree48" parent="Decoration" index="52" instance=ExtResource("3_kf1a5")]
+position = Vector2(1262, -356)
+
+[node name="Tree49" parent="Decoration" index="53" instance=ExtResource("3_kf1a5")]
+position = Vector2(1324, -321)
+
+[node name="Tree50" parent="Decoration" index="54" instance=ExtResource("3_kf1a5")]
+position = Vector2(1388, -299)
+
+[node name="Tree51" parent="Decoration" index="55" instance=ExtResource("3_kf1a5")]
+position = Vector2(1465, -321)
+
+[node name="Tree52" parent="Decoration" index="56" instance=ExtResource("3_kf1a5")]
+position = Vector2(1547, -311)
+
+[node name="Tree53" parent="Decoration" index="57" instance=ExtResource("3_kf1a5")]
+position = Vector2(1621, -281)
+
+[node name="Tree54" parent="Decoration" index="58" instance=ExtResource("3_kf1a5")]
+position = Vector2(1687, -239)
+
+[node name="Tree55" parent="Decoration" index="59" instance=ExtResource("3_kf1a5")]
+position = Vector2(1796, -204)
+
+[node name="Tree56" parent="Decoration" index="60" instance=ExtResource("3_kf1a5")]
+position = Vector2(1848, -132)
+
+[node name="Tree57" parent="Decoration" index="61" instance=ExtResource("3_kf1a5")]
+position = Vector2(1737, -123)
+
+[node name="Tree58" parent="Decoration" index="62" instance=ExtResource("3_kf1a5")]
+position = Vector2(1246, -316)
+
+[node name="Tree59" parent="Decoration" index="63" instance=ExtResource("3_kf1a5")]
+position = Vector2(1191, -318)
+
+[node name="Tree60" parent="Decoration" index="64" instance=ExtResource("3_kf1a5")]
+position = Vector2(1115, -315)
+
+[node name="Rock" parent="Decoration" index="65"]
+position = Vector2(-74, 362)
+
+[node name="Rock11" parent="Decoration" index="66"]
+position = Vector2(-135, 413)
+
+[node name="Rock2" parent="Decoration" index="67"]
+position = Vector2(-190, 353)
+
+[node name="Rock3" parent="Decoration" index="68"]
+position = Vector2(-264, 412)
+
+[node name="Rock4" parent="Decoration" index="69"]
+position = Vector2(656, 339)
+
+[node name="Rock5" parent="Decoration" index="70"]
+position = Vector2(915, 615)
+
+[node name="Rock6" parent="Decoration" index="71"]
+position = Vector2(316, 887)
+
+[node name="Rock7" parent="Decoration" index="72"]
+position = Vector2(1339, 831)
+
+[node name="Rock8" parent="Decoration" index="73"]
+position = Vector2(612, 770)
+
+[node name="Rock9" parent="Decoration" index="74"]
+position = Vector2(1480, 455)
+
+[node name="Rock10" parent="Decoration" index="75"]
+position = Vector2(1506, 125)
+
+[node name="Mushroom" parent="." index="8"]
+position = Vector2(1433, 231)
+
+[node name="Label" parent="Mushroom" index="3"]
+visible = false
+
+[node name="Label2" parent="Mushroom" index="4"]
+visible = false

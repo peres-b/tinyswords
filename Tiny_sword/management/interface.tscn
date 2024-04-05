@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxcktgj4nfww0"]
+
+[ext_resource type="FontFile" uid="uid://brrjciasy55dw" path="res://assets/kurland.ttf" id="1_i1h2g"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_jv1pb"]
+font = ExtResource("1_i1h2g")
+font_size = 32
+outline_size = 2
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 2
+shadow_color = Color(0, 0, 0, 0.670588)
+shadow_offset = Vector2(2, 2)
+
+[node name="interface" type="CanvasLayer"]
+
+[node name="Health" type="Label" parent="."]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 61.0
+offset_bottom = 43.0
+text = "HP:10"
+label_settings = SubResource("LabelSettings_jv1pb")
+vertical_alignment = 1
+
+[node name="Score" type="Label" parent="."]
+offset_left = 20.0
+offset_top = 54.0
+offset_right = 102.0
+offset_bottom = 88.0
+text = "Score:000"
+label_settings = SubResource("LabelSettings_jv1pb")
+vertical_alignment = 1

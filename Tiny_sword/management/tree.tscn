@@ -1,0 +1,60 @@
+[gd_scene load_steps=8 format=3 uid="uid://ce4l8hlnk32v4"]
+
+[ext_resource type="Texture2D" uid="uid://bu8qa6k44xcci" path="res://assets/terrain/decoration/tree.png" id="1_vl13k"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_662i0"]
+atlas = ExtResource("1_vl13k")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bnknt"]
+atlas = ExtResource("1_vl13k")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jqnd1"]
+atlas = ExtResource("1_vl13k")
+region = Rect2(384, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8yase"]
+atlas = ExtResource("1_vl13k")
+region = Rect2(576, 0, 192, 192)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xs1gk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_662i0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bnknt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jqnd1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8yase")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ons8q"]
+radius = 18.0
+height = 50.0
+
+[node name="TreeStump" type="AnimatedSprite2D"]
+visibility_layer = 5
+y_sort_enabled = true
+sprite_frames = SubResource("SpriteFrames_xs1gk")
+autoplay = "default"
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+light_mask = 7
+visibility_layer = 7
+y_sort_enabled = true
+position = Vector2(-1, 68)
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+y_sort_enabled = true
+shape = SubResource("CapsuleShape2D_ons8q")

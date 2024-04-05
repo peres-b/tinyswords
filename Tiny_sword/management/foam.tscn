@@ -1,0 +1,75 @@
+[gd_scene load_steps=11 format=3 uid="uid://ck1vwevomypre"]
+
+[ext_resource type="Texture2D" uid="uid://bqrkcig2rmbkw" path="res://assets/terrain/water/foam.png" id="1_rruj3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_if5r0"]
+atlas = ExtResource("1_rruj3")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qvsqv"]
+atlas = ExtResource("1_rruj3")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nn5my"]
+atlas = ExtResource("1_rruj3")
+region = Rect2(384, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3lh3u"]
+atlas = ExtResource("1_rruj3")
+region = Rect2(576, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rb3ov"]
+atlas = ExtResource("1_rruj3")
+region = Rect2(768, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ojt24"]
+atlas = ExtResource("1_rruj3")
+region = Rect2(960, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ke0vp"]
+atlas = ExtResource("1_rruj3")
+region = Rect2(1152, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f5epb"]
+atlas = ExtResource("1_rruj3")
+region = Rect2(1344, 0, 192, 192)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4sovr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_if5r0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qvsqv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nn5my")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3lh3u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rb3ov")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ojt24")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ke0vp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f5epb")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}]
+
+[node name="Foam" type="AnimatedSprite2D"]
+z_index = -1
+position = Vector2(32, 32)
+sprite_frames = SubResource("SpriteFrames_4sovr")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.916631

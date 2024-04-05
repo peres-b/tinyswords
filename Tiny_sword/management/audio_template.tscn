@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://ds8qc1okcppcb"]
+
+[ext_resource type="Script" path="res://Tiny_sword/management/audio_template.gd" id="1_jcgae"]
+
+[node name="AudioTemplate" type="AudioStreamPlayer2D"]
+script = ExtResource("1_jcgae")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="on_timer_timeout"]

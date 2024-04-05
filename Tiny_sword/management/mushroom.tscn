@@ -1,0 +1,102 @@
+[gd_scene load_steps=8 format=3 uid="uid://d3jjjvvm311be"]
+
+[ext_resource type="Texture2D" uid="uid://broswfih1g1ao" path="res://assets/terrain/decoration/mushroom_03.png" id="1_06ojo"]
+[ext_resource type="Script" path="res://Tiny_sword/management/mushroom.gd" id="1_mohei"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ys5a2"]
+radius = 10.198
+
+[sub_resource type="Animation" id="Animation_n16m7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_06ojo")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_4a02o"]
+resource_name = "hit"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_06ojo")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 0, 0, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_uktq7"]
+resource_name = "hit_2"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_06ojo")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1ofjl"]
+_data = {
+"RESET": SubResource("Animation_n16m7"),
+"hit": SubResource("Animation_4a02o"),
+"idle": SubResource("Animation_uktq7")
+}
+
+[node name="Mushroom" type="StaticBody2D"]
+collision_layer = 3
+script = ExtResource("1_mohei")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_06ojo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3)
+shape = SubResource("CircleShape2D_ys5a2")
+
+[node name="Animation" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_1ofjl")
+}
+
+[connection signal="animation_finished" from="Animation" to="." method="on_animation_finished"]

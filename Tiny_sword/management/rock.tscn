@@ -1,0 +1,72 @@
+[gd_scene load_steps=11 format=3 uid="uid://nt3ta5xuguy3"]
+
+[ext_resource type="Texture2D" uid="uid://0jowt3awur78" path="res://assets/terrain/decoration/water_rock.png" id="1_l58cf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_avjvu"]
+atlas = ExtResource("1_l58cf")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jd2o8"]
+atlas = ExtResource("1_l58cf")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_06jj1"]
+atlas = ExtResource("1_l58cf")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jypgi"]
+atlas = ExtResource("1_l58cf")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_71ncx"]
+atlas = ExtResource("1_l58cf")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m7usi"]
+atlas = ExtResource("1_l58cf")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g0ffc"]
+atlas = ExtResource("1_l58cf")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ljf38"]
+atlas = ExtResource("1_l58cf")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ktgkn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_avjvu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jd2o8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_06jj1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jypgi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_71ncx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m7usi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g0ffc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ljf38")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="Rock" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_ktgkn")
+autoplay = "default"
+frame_progress = 0.99116
