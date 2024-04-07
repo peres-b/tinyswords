@@ -163,7 +163,6 @@ texture_region_size = Vector2i(64, 64)
 0:0/0/y_sort_origin = 15
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-23.5, 13, -21.5, 4, 25, 4.5, 23.5, 14.5, 4.5, 18)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mkc2l"]
 texture = ExtResource("8_7ps2e")
@@ -387,24 +386,27 @@ sources/6 = SubResource("TileSetAtlasSource_7n173")
 sources/7 = SubResource("TileSetAtlasSource_dc7s6")
 
 [node name="level" type="Node2D" groups=["Level"]]
+y_sort_enabled = true
 script = ExtResource("1_pihby")
 target_kill_count = 1
 next_level_scene_path = "res://Tiny_sword/management/levels/level_1.tscn"
 current_level_scene_path = "res://Tiny_sword/management/levels/level_start.tscn"
 
 [node name="Terrain" type="Node2D" parent="."]
+y_sort_enabled = true
 script = ExtResource("2_vbbgl")
 
 [node name="Water" type="TileMap" parent="Terrain"]
 light_mask = 4
 visibility_layer = 3
-z_index = -2
+z_index = -3
 z_as_relative = false
 tile_set = SubResource("TileSet_wmarl")
 rendering_quadrant_size = 64
 format = 2
 
 [node name="Grass" type="TileMap" parent="Terrain"]
+z_index = -1
 tile_set = SubResource("TileSet_qc8rh")
 rendering_quadrant_size = 64
 format = 2
@@ -417,54 +419,16 @@ format = 2
 layer_0/y_sort_enabled = true
 layer_0/tile_data = PackedInt32Array(196614, 2, 0, 458762, 1, 0, 327691, 4, 0, 720904, 2, 0, 1048582, 1, 0, 1310727, 0, 0, 1245192, 0, 0, 1310728, 4, 0, 1048590, 4, 0, 1179663, 2, 0, 1048589, 2, 0, 1310732, 2, 0, 1310735, 1, 0)
 
-[node name="Decoration2" type="Node2D" parent="."]
-y_sort_enabled = true
-
-[node name="TreeStump" parent="Decoration2" instance=ExtResource("13_7rban")]
-position = Vector2(573, 362)
-
-[node name="Rock" parent="Decoration2" instance=ExtResource("14_xolso")]
-position = Vector2(239, 272)
-
-[node name="Rock2" parent="Decoration2" instance=ExtResource("14_xolso")]
-position = Vector2(764, 814)
-
-[node name="Rock3" parent="Decoration2" instance=ExtResource("14_xolso")]
-position = Vector2(825, 775)
-
-[node name="Rock4" parent="Decoration2" instance=ExtResource("14_xolso")]
-position = Vector2(852, 836)
-
-[node name="Rock5" parent="Decoration2" instance=ExtResource("14_xolso")]
-position = Vector2(555, 1440)
-
-[node name="Rock6" parent="Decoration2" instance=ExtResource("14_xolso")]
-position = Vector2(586, 1503)
-
-[node name="Rock7" parent="Decoration2" instance=ExtResource("14_xolso")]
-position = Vector2(640, 1555)
-
-[node name="Rock8" parent="Decoration2" instance=ExtResource("14_xolso")]
-position = Vector2(743, 1558)
-
-[node name="Rock9" parent="Decoration2" instance=ExtResource("14_xolso")]
-position = Vector2(688, 1624)
-
-[node name="Rock10" parent="Decoration2" instance=ExtResource("14_xolso")]
-position = Vector2(789, 1617)
-
 [node name="Knight" parent="." instance=ExtResource("13_okwf3")]
-position = Vector2(556, 672)
+position = Vector2(574, 352)
 collision_mask = 6
 
 [node name="Goblin" parent="." instance=ExtResource("14_3lpmi")]
-y_sort_enabled = true
 position = Vector2(1021, 1331)
 collision_mask = 5
 
 [node name="Goblin2" parent="." instance=ExtResource("14_3lpmi")]
-y_sort_enabled = true
-position = Vector2(963, 303)
+position = Vector2(962, 328)
 collision_mask = 5
 
 [node name="Interface" parent="." instance=ExtResource("14_jbk42")]
@@ -634,3 +598,39 @@ theme_override_font_sizes/font_size = 40
 text = "ENEMIES"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Decoration2" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="TreeStump" parent="Decoration2" instance=ExtResource("13_7rban")]
+position = Vector2(483, 1214)
+
+[node name="Rock" parent="Decoration2" instance=ExtResource("14_xolso")]
+position = Vector2(239, 272)
+
+[node name="Rock2" parent="Decoration2" instance=ExtResource("14_xolso")]
+position = Vector2(764, 814)
+
+[node name="Rock3" parent="Decoration2" instance=ExtResource("14_xolso")]
+position = Vector2(825, 775)
+
+[node name="Rock4" parent="Decoration2" instance=ExtResource("14_xolso")]
+position = Vector2(852, 836)
+
+[node name="Rock5" parent="Decoration2" instance=ExtResource("14_xolso")]
+position = Vector2(555, 1440)
+
+[node name="Rock6" parent="Decoration2" instance=ExtResource("14_xolso")]
+position = Vector2(586, 1503)
+
+[node name="Rock7" parent="Decoration2" instance=ExtResource("14_xolso")]
+position = Vector2(640, 1555)
+
+[node name="Rock8" parent="Decoration2" instance=ExtResource("14_xolso")]
+position = Vector2(743, 1558)
+
+[node name="Rock9" parent="Decoration2" instance=ExtResource("14_xolso")]
+position = Vector2(688, 1624)
+
+[node name="Rock10" parent="Decoration2" instance=ExtResource("14_xolso")]
+position = Vector2(789, 1617)

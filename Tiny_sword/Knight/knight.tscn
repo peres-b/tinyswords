@@ -405,13 +405,14 @@ _data = {
 y_sort_enabled = true
 collision_mask = 2
 script = ExtResource("1_snn8n")
+move_speed = 250.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 29)
 shape = SubResource("RectangleShape2D_o8qbf")
 
 [node name="Texture" type="Sprite2D" parent="."]
 texture = ExtResource("2_x3jg2")
+offset = Vector2(0, -29)
 hframes = 6
 vframes = 3
 
@@ -421,11 +422,12 @@ libraries = {
 }
 
 [node name="attackArea" type="Area2D" parent="."]
+position = Vector2(9, -5)
 collision_layer = 0
 collision_mask = 2
 
 [node name="Collision" type="CollisionShape2D" parent="attackArea"]
-position = Vector2(58, -14.5)
+position = Vector2(58, -21)
 shape = SubResource("RectangleShape2D_naxq8")
 disabled = true
 
@@ -435,13 +437,12 @@ libraries = {
 }
 
 [node name="Camera" type="Camera2D" parent="."]
+visible = false
 process_callback = 0
 position_smoothing_enabled = true
 position_smoothing_speed = 2.0
 
 [node name="Dust" parent="." instance=ExtResource("4_qxoy7")]
-z_index = 1
-position = Vector2(0, 29)
 
 [connection signal="animation_finished" from="Animation" to="." method="_on_animation_finished"]
 [connection signal="body_entered" from="attackArea" to="." method="_on_attack_area_body_entered"]

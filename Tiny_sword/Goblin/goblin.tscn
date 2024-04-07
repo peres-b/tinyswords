@@ -393,21 +393,23 @@ _data = {
 }
 
 [node name="Goblin" type="CharacterBody2D"]
+y_sort_enabled = true
 collision_layer = 2
 script = ExtResource("1_0huqh")
+move_speed = 190.0
+knockback_timer = 0.14
 
 [node name="detectionArea" type="Area2D" parent="."]
 
 [node name="Collision" type="CollisionShape2D" parent="detectionArea"]
-position = Vector2(0, 30)
 shape = SubResource("CircleShape2D_dn083")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 30)
 shape = SubResource("RectangleShape2D_t1cbk")
 
 [node name="Texture" type="Sprite2D" parent="."]
 texture = ExtResource("1_6e4a0")
+offset = Vector2(0, -32)
 hframes = 7
 vframes = 3
 
@@ -422,7 +424,6 @@ libraries = {
 }
 
 [node name="Dust" parent="." instance=ExtResource("4_mb8gg")]
-position = Vector2(0, 30)
 
 [connection signal="body_entered" from="detectionArea" to="." method="on_detection_area_body_entered"]
 [connection signal="body_exited" from="detectionArea" to="." method="on_detection_area_body_exited"]

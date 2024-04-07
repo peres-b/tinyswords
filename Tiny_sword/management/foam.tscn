@@ -67,7 +67,7 @@ animations = [{
 }]
 
 [node name="Foam" type="AnimatedSprite2D"]
-z_index = -1
+z_index = -2
 position = Vector2(32, 32)
 sprite_frames = SubResource("SpriteFrames_4sovr")
 animation = &"idle"
