@@ -10,272 +10,267 @@ target_kill_count = 4
 next_level_scene_path = "res://Tiny_sword/management/credits.tscn"
 current_level_scene_path = "res://Tiny_sword/management/levels/level_2.tscn"
 
-[node name="Water" parent="Terrain" index="0"]
-z_index = -3
+[node name="Grass" parent="Terrain2" index="1"]
+layer_1/tile_data = PackedInt32Array(589831, 458752, 0, 589830, 393216, 0, 393222, 458752, 2, 327686, 458752, 0, 589829, 393216, 1, 524293, 458752, 1, 458757, 458752, 1, 393221, 393216, 1, 327685, 327680, 0, 589828, 393216, 2, 524292, 393216, 1, 458756, 327680, 1, 393220, 327680, 0, 589827, 327680, 2, 524291, 327680, 0, 524289, 458752, 0, 655366, 393216, 2, 655367, 393216, 1, 720903, 327680, 1, 720904, 393216, 1, 655368, 393216, 0, 720905, 458752, 1, 786441, 458752, 2, 786440, 393216, 1, 786439, 393216, 1, 786438, 393216, 1, 851975, 393216, 2, 851976, 458752, 2, 851974, 393216, 2, 851973, 393216, 2, 851972, 393216, 2, 851971, 393216, 2, 786435, 393216, 1, 786434, 393216, 1, 720898, 393216, 0, 720897, 393216, 1, 655361, 458752, 1, 655360, 327680, 1, 589824, 327680, 1, 720899, 458752, 0, 786436, 393216, 0, 786433, 327680, 2, 851970, 327680, 2, 720896, 327680, 2, 786437, 393216, 0, 655369, 458752, 0, -131059, 327680, 0, -131058, 393216, 0, -131057, 393216, 0, -131056, 393216, 0, -131055, 458752, 0, -65519, 458752, 1, -65518, 524288, 0, 18, 458752, 1, 19, 524288, 0, 65555, 393216, 2, 65556, 393216, 3, 65557, 393216, 0, 131093, 327680, 1, 131094, 458752, 1, 196630, 393216, 1, 196631, 393216, 0, 196632, 458752, 0, 262168, 458752, 2, 262167, 393216, 2, 262166, 393216, 2, 262165, 327680, 2, 196629, 327680, 1, 65554, 393216, 2, 65553, 327680, 2, 17, 393216, 1, 16, 327680, 2, -65520, 393216, 1, -65521, 393216, 2, -65522, 393216, 2, -65523, 327680, 2, 524288, 327680, 0, 589825, 458752, 1, 655365, 393216, 2, 851985, 327680, 0, 917521, 327680, 1, 917522, 393216, 1, 983058, 393216, 2, 983059, 458752, 2, 917523, 458752, 1, 851986, 393216, 0, 851987, 458752, 0, 983057, 327680, 2, 65558, 458752, 0, 21, 524288, 0)
+layer_3/tile_data = PackedInt32Array(262151, 65536, 2, 196615, 65536, 1, 131079, 65536, 1, 65543, 65536, 1, 327686, 131072, 2, 262150, 65536, 1, 196614, 65536, 1, 131078, 65536, 1, 65542, 65536, 1, 327685, 65536, 2, 262149, 65536, 1, 196613, 65536, 1, 131077, 65536, 1, 65541, 65536, 1, 327684, 65536, 1, 262148, 65536, 1, 196612, 65536, 1, 131076, 65536, 1, 65540, 65536, 1, 327683, 65536, 1, 262147, 65536, 1, 196611, 65536, 1, 131075, 0, 1, 65539, 0, 1, 262146, 65536, 1, 327682, 65536, 1, 393218, 65536, 1, 393219, 65536, 1, 393220, 131072, 1, 458756, 131072, 2, 262152, 131072, 2, 196616, 65536, 1, 196610, 65536, 0, 327681, 65536, 1, 393217, 65536, 1, 458755, 65536, 1, 458754, 65536, 1, 524291, 131072, 1, 327680, 0, 1, 262144, 0, 0, 262145, 65536, 1, 393216, 0, 1, 458753, 65536, 1, 196609, 0, 0, 131080, 65536, 1, -65532, 0, 0, -65529, 65536, 0, -65528, 131072, 0, 131082, 65536, 1, 131083, 65536, 0, 65546, 131072, 0, 327694, 0, 2, 262158, 65536, 1, 196622, 65536, 0, 262157, 65536, 2, 196621, 65536, 0, 262156, 0, 2, 196620, 65536, 1, 131084, 131072, 0, 196619, 65536, 2, 196618, 65536, 2, 196617, 65536, 2, 131081, 65536, 1, 65545, 65536, 1, 393227, 65536, 0, 458763, 65536, 1, 458764, 65536, 1, 524300, 65536, 2, 524301, 131072, 2, 458765, 131072, 0, 393228, 131072, 0, 524299, 0, 2, 655374, 0, 0, 655366, 131072, 0, 655365, 65536, 1, 589829, 131072, 0, 655364, 65536, 1, 589828, 65536, 0, 655363, 65536, 1, 589827, 65536, 1, 655362, 65536, 1, 589826, 65536, 1, 655361, 0, 2, 589825, 0, 1, 786439, 65536, 2, 720903, 65536, 0, 786438, 65536, 2, 720902, 65536, 1, 786437, 65536, 2, 720901, 65536, 1, 786436, 65536, 2, 720900, 65536, 1, 786435, 0, 2, 720899, 65536, 1, 720898, 0, 2, 524290, 65536, 1, 524289, 65536, 1, 786440, 131072, 2, 720904, 131072, 0, -131049, 131072, 0, -131050, 65536, 1, -196586, 131072, 0, -131051, 65536, 1, -196587, 65536, 1, -262123, 131072, 0, -131052, 65536, 1, -196588, 65536, 1, -262124, 65536, 0, -131053, 65536, 1, -196589, 65536, 1, -262125, 65536, 0, -131054, 65536, 1, -196590, 65536, 1, -262126, 65536, 0, -131055, 65536, 1, -196591, 65536, 1, -262127, 65536, 0, -131056, 65536, 2, -196592, 65536, 1, -262128, 65536, 0, -131057, 65536, 2, -196593, 65536, 1, -262129, 65536, 0, -131058, 65536, 2, -196594, 65536, 1, -262130, 65536, 0, -131059, 0, 2, -196595, 0, 1, -262131, 0, 0, 24, 131072, 1, -65512, 131072, 0, 23, 65536, 1, -65513, 65536, 1, 22, 65536, 1, -65514, 65536, 1, 21, 65536, 1, -65515, 65536, 1, 20, 65536, 1, -65516, 65536, 1, 19, 65536, 1, -65517, 65536, 1, 18, 0, 2, -65518, 65536, 1, 196632, 131072, 2, 131096, 131072, 1, 65560, 131072, 1, 196631, 65536, 2, 131095, 65536, 1, 65559, 65536, 1, 196630, 0, 2, 131094, 65536, 1, 65558, 65536, 1, 131093, 0, 2, 65557, 65536, 1, 65556, 65536, 2, 65555, 0, 2, -65519, 0, 2, 524288, 0, 2, 458752, 0, 1, 4, 65536, 1, 3, 0, 0, 5, 65536, 1, 6, 65536, 1, -65530, 65536, 0, -65531, 65536, 0, 8, 131072, 1, 9, 196608, 0, 7, 65536, 1, 65544, 65536, 1, 393226, 0, 0, 458762, 0, 2, 262159, 65536, 1, 262160, 65536, 1, 327696, 65536, 1, 327697, 65536, 1, 327698, 65536, 0, 393234, 65536, 1, 393235, 65536, 1, 327699, 131072, 0, 262161, 131072, 0, 196624, 131072, 0, 196623, 65536, 0, 393236, 131072, 0, 458772, 131072, 1, 458771, 65536, 1, 393233, 65536, 1, 458769, 65536, 1, 393232, 65536, 1, 458768, 0, 1, 524305, 65536, 1, 524306, 65536, 1, 524307, 65536, 1, 524304, 0, 1, 458770, 65536, 1, 524308, 131072, 2, 589841, 65536, 1, 589840, 0, 1, 655376, 65536, 1, 655377, 65536, 1, 589842, 65536, 1, 655375, 65536, 0, 720911, 65536, 1, 655378, 65536, 1, 589843, 131072, 1, 655379, 131072, 1, 720914, 65536, 1, 720915, 131072, 1, 786451, 131072, 1, 851987, 131072, 2, 786450, 65536, 1, 851986, 65536, 2, 917523, 196608, 2, 983059, 131072, 0, 983058, 65536, 0, 1048594, 65536, 1, 1048593, 65536, 1, 1114130, 131072, 2, 1048595, 131072, 2, 1114129, 65536, 1, 1048592, 65536, 1, 983057, 65536, 1, 917521, 131072, 1, 851985, 65536, 1, 917520, 65536, 1, 851984, 65536, 1, 786448, 65536, 1, 720912, 65536, 1, 720913, 65536, 1, 786447, 65536, 1, 786449, 65536, 1, 851983, 0, 1, 917519, 65536, 1, 917518, 0, 0, 983055, 65536, 1, 983056, 65536, 1, 983054, 0, 1, 1048590, 65536, 1, 1048591, 65536, 1, 720910, 0, 1, 786446, 0, 2, 1048589, 0, 0, 1114125, 65536, 1, 1114124, 0, 0, 1179660, 65536, 1, 1114126, 65536, 1, 1179661, 65536, 1, 1179662, 65536, 1, 1114127, 65536, 1, 1179663, 65536, 1, 1179664, 65536, 1, 1245200, 65536, 2, 1245201, 131072, 2, 1179665, 131072, 1, 1114128, 65536, 1, 1245199, 65536, 1, 1245198, 65536, 1, 1310734, 65536, 1, 1310733, 65536, 1, 1310735, 131072, 2, 1376270, 131072, 2, 1441805, 131072, 2, 1376269, 65536, 1, 1245197, 65536, 1, 1441804, 65536, 1, 1376268, 65536, 1, 1310732, 65536, 1, 1245196, 65536, 1, 1441803, 65536, 1, 1376267, 65536, 1, 1310731, 65536, 1, 1245195, 65536, 1, 1441802, 65536, 1, 1376266, 65536, 1, 1310730, 65536, 1, 1245194, 65536, 1, 1441801, 65536, 1, 1376265, 65536, 1, 1310729, 65536, 1, 1245193, 65536, 1, 1441800, 65536, 1, 1376264, 65536, 1, 1310728, 65536, 1, 1245192, 65536, 1, 1441799, 65536, 1, 1376263, 65536, 1, 1310727, 65536, 1, 1245191, 65536, 1, 1376262, 65536, 1, 1310726, 65536, 1, 1245190, 65536, 1, 1179659, 65536, 0, 1179658, 65536, 0, 1179657, 65536, 1, 1179656, 65536, 1, 1114121, 131072, 0, 1114120, 65536, 0, 1114119, 0, 0, 1179654, 0, 0, 1179655, 65536, 1, 1507335, 0, 2, 1507336, 65536, 2, 1507337, 65536, 2, 1507338, 65536, 2, 1507339, 65536, 2, 1507340, 131072, 2, 1245189, 0, 0, 1310725, 0, 1, 1376261, 0, 2, 1441798, 0, 2, 327695, 65536, 1, 393231, 0, 2)
 
-[node name="Grass" parent="Terrain" index="1"]
-layer_0/tile_data = PackedInt32Array(327687, 65536, 1, 262151, 65536, 1, 196615, 65536, 1, 327686, 65536, 1, 262150, 65536, 1, 196614, 65536, 1, 327685, 65536, 1, 262149, 65536, 1, 196613, 65536, 1, 327684, 65536, 1, 262148, 65536, 1, 196612, 65536, 1, 327694, 131072, 2, 262158, 65536, 1, 196622, 65536, 1, 131086, 65536, 1, 65550, 131072, 0, 327693, 65536, 1, 262157, 65536, 1, 196621, 65536, 1, 131085, 65536, 1, 65549, 65536, 0, 327692, 65536, 1, 262156, 65536, 1, 196620, 65536, 1, 131084, 65536, 1, 65548, 65536, 0, 327691, 65536, 2, 262155, 65536, 1, 196619, 65536, 1, 131083, 65536, 1, 65547, 65536, 0, 327690, 65536, 2, 262154, 65536, 1, 196618, 65536, 1, 131082, 65536, 1, 65546, 65536, 0, 327689, 65536, 2, 262153, 65536, 1, 196617, 65536, 1, 131081, 65536, 1, 65545, 65536, 0, 917511, 65536, 1, 851975, 65536, 1, 786439, 131072, 1, 720903, 131072, 1, 655367, 131072, 0, 524295, 131072, 2, 917510, 0, 2, 851974, 65536, 1, 786438, 65536, 1, 720902, 65536, 1, 655366, 65536, 1, 589830, 131072, 1, 524294, 65536, 1, 851973, 0, 2, 786437, 0, 1, 720901, 65536, 1, 655365, 65536, 1, 589829, 65536, 1, 524293, 65536, 1, 720900, 0, 2, 655364, 0, 1, 589828, 0, 1, 524292, 0, 1, 262152, 65536, 1, 327688, 65536, 1, 393221, 65536, 1, 393220, 65536, 1, 458756, 65536, 1, 458757, 65536, 1, 458755, 65536, 2, 393219, 65536, 1, 458759, 131072, 1, 458758, 65536, 1, 393222, 65536, 1, 393223, 65536, 1, 851976, 65536, 1, 655371, 131072, 1, 589835, 131072, 0, 655370, 65536, 1, 589834, 65536, 0, 655369, 0, 1, 589833, 0, 0, 393228, 0, 2, 393229, 131072, 2, 393224, 131072, 2, 720917, 131072, 0, 720916, 65536, 1, 655380, 131072, 1, -131065, 131072, 0, -131066, 65536, 0, -131067, 0, 0, 65541, 65536, 1, 131077, 65536, 1, 131078, 65536, 1, 65542, 65536, 1, 6, 65536, 1, 7, 131072, 1, 65543, 65536, 1, 131079, 65536, 1, 65540, 65536, 1, 131076, 65536, 1, 5, 65536, 1, 131080, 65536, 1, 196616, 65536, 1, 4, 65536, 1, -65529, 131072, 1, -65530, 65536, 1, -65531, 65536, 1, -65532, 65536, 0, 3, 65536, 1, 2, 0, 0, 65538, 0, 2, 65539, 65536, 1, -65533, 0, 0, 131075, 0, 1, 65544, 65536, 0, 131087, 65536, 0, 131088, 131072, 0, 196624, 65536, 1, 196625, 131072, 1, 262161, 65536, 1, 262162, 131072, 0, 196623, 65536, 1, 262160, 65536, 1, 327697, 65536, 1, 327698, 131072, 1, 393234, 65536, 1, 393235, 65536, 0, 458771, 65536, 1, 458772, 131072, 0, 524308, 131072, 1, 262159, 65536, 2, 327696, 0, 2, 589844, 65536, 1, 589843, 65536, 1, 524307, 65536, 1, 524306, 65536, 1, 458770, 65536, 1, 393233, 0, 1, 458769, 0, 1, 655379, 65536, 1, 589842, 0, 1, 524305, 0, 2, 720906, 65536, 2, 720907, 131072, 2, 720905, 0, 2, 917512, 65536, 1, 917513, 131072, 1, 851977, 131072, 0, 983047, 65536, 2, 983049, 131072, 2, 983048, 65536, 2, 786453, 131072, 2, 720915, 65536, 1, 786452, 65536, 1, 851988, 131072, 2, 851987, 65536, 1, 851986, 65536, 1, 786450, 65536, 1, 720914, 65536, 1, 655378, 0, 1, 786449, 65536, 1, 851985, 65536, 1, 851984, 0, 1, 917520, 65536, 1, 917519, 0, 0, 786448, 0, 0, 720913, 0, 0, 983056, 65536, 1, 983055, 0, 1, 1048591, 65536, 1, 1048590, 0, 0, 1114126, 65536, 1, 1114127, 65536, 1, 1048592, 65536, 1, 1048593, 65536, 1, 983057, 65536, 1, 983058, 65536, 1, 1179662, 65536, 1, 1179661, 65536, 1, 1245197, 65536, 1, 1245196, 65536, 1, 1310732, 65536, 1, 1310733, 65536, 1, 1310734, 65536, 2, 1310735, 131072, 2, 1245199, 65536, 1, 1245200, 131072, 2, 1179665, 65536, 1, 1179666, 131072, 2, 1114130, 131072, 1, 1048594, 131072, 1, 1114128, 65536, 1, 1179663, 65536, 1, 1245198, 65536, 1, 1179664, 65536, 1, 1114129, 65536, 1, 983059, 131072, 2, 917523, 131072, 1, 917522, 65536, 1, 917521, 65536, 1, 786451, 65536, 1, 1376269, 131072, 2, 1114125, 65536, 0, 1376268, 65536, 1, 1179660, 65536, 1, 1114124, 0, 0, 1376267, 65536, 1, 1310731, 65536, 1, 1245195, 65536, 1, 1179659, 65536, 0, 1376266, 65536, 1, 1310730, 65536, 1, 1245194, 65536, 1, 1179658, 65536, 0, 1310729, 65536, 1, 1245193, 65536, 1, 1179657, 65536, 0, 1310727, 65536, 1, 1245191, 65536, 1, 1376263, 65536, 1, 1376264, 65536, 1, 1310728, 65536, 1, 1376265, 65536, 1, 1441801, 65536, 1, 1441802, 65536, 1, 1245192, 65536, 1, 1441804, 131072, 2, 1441803, 65536, 1, 1441800, 65536, 1, 1441799, 65536, 1, 1441798, 65536, 1, 1441797, 0, 2, 1376261, 0, 1, 1376262, 65536, 1, 1310726, 65536, 1, 1179655, 65536, 0, 1179654, 0, 0, 1245189, 0, 0, 1310725, 0, 1, 1245190, 65536, 1, 1179656, 65536, 0, 1507334, 0, 2, 1507335, 65536, 2, 1507337, 65536, 2, 1507336, 65536, 2, 1507338, 65536, 2, 1507339, 131072, 2, 327683, 65536, 1, 262147, 65536, 1, 393218, 65536, 1, 327682, 65536, 1, 262146, 65536, 0, 327681, 0, 1, 262145, 0, 0, 458754, 0, 2, 196611, 0, 1, 393217, 0, 2, -196594, 0, 0, -196593, 65536, 0, -131057, 65536, 2, -131056, 65536, 2, -131055, 65536, 2, -131054, 65536, 1, -65518, 65536, 2, -65517, 65536, 1, 19, 0, 2, 20, 65536, 1, 65556, 0, 2, 65557, 65536, 2, 65558, 65536, 2, 65559, 65536, 1, 65560, 131072, 1, 131096, 131072, 1, 131095, 0, 1, 196631, 0, 2, 196632, 131072, 2, 22, 65536, 1, 21, 65536, 1, 23, 65536, 1, 24, 131072, 1, -65516, 65536, 1, -131053, 65536, 1, -131052, 65536, 1, -196592, 65536, 0, -196591, 65536, 0, -196590, 65536, 0, -196589, 65536, 0, -196588, 131072, 0, -131051, 65536, 1, -131050, 65536, 0, -65514, 65536, 1, -65513, 65536, 1, -65515, 65536, 1, -65512, 131072, 0, -131049, 131072, 0, -131058, 0, 2)
-
-[node name="Decoration" parent="Terrain" index="2"]
-layer_0/tile_data = PackedInt32Array(327689, 1, 0, 65540, 2, 0, 6, 2, 0, 720913, 2, 0, 786449, 2, 0, 786453, 2, 0, 19, 2, 0, -131053, 2, 0, -65512, 2, 0, -65515, 2, 0, -65514, 1, 0, -131055, 4, 0, -131049, 4, 0, -131056, 1, 0, -131058, 0, 0, 589843, 1, 0, 393235, 2, 0, 131085, 1, 0, 196615, 1, 0, 524292, 1, 0, 393218, 0, 0, 786438, 0, 0, 917512, 2, 0, 655370, 5, 0, 1048590, 4, 0, 786451, 2, 0, 851987, 4, 0, 851986, 4, 0)
+[node name="Decoration" parent="Terrain2" index="2"]
+layer_0/tile_data = PackedInt32Array(131083, 15, 0, 65544, 15, 0, 327681, 15, 0, 131076, 2, 0, 131077, 2, 0, 65542, 15, 0, 131079, 14, 0, 65539, 1, 0, 9, 1, 0, 65545, 1, 0, 6, 10, 0, 655377, 11, 0, 983054, 10, 0, 851985, 10, 0, 1114129, 10, 0, 1048592, 11, 0, 1245201, 14, 0, 1179656, 14, 0, 1441799, 14, 0, 1310734, 14, 0, 720902, 14, 0, 655363, 14, 0, 524299, 14, 0, 393228, 15, 0, 458772, 15, 0, 131094, 15, 0, 18, 15, 0, -131055, 15, 0, 65558, 15, 0, -65514, 2, 0, -65512, 2, 0, -131053, 2, 0, 19, 2, 0, -131056, 2, 0, -131057, 0, 0, -196594, 15, 0, -131058, 15, 0, -131049, 15, 0, 131093, 14, 0, 196631, 17, 0, 65546, 17, 0, 458762, 17, 0, 458754, 17, 0, 720899, 17, 0, 262158, 17, 0, 851983, 17, 0, 1048595, 17, 0, 1179661, 17, 0, 1441804, 17, 0, 1310725, 17, 0, 1310731, 2, 0, 1245192, 2, 0, 1441801, 2, 0, 1376262, 15, 0, 1310728, 15, 0, 1507338, 15, 0)
 
 [node name="Tree4" parent="Decoration" index="0"]
-position = Vector2(248, 81)
+position = Vector2(266, 103)
 
 [node name="Tree5" parent="Decoration" index="1"]
-position = Vector2(323, 132)
+position = Vector2(312, 162)
 
 [node name="Tree6" parent="Decoration" index="2"]
-position = Vector2(460, -10)
+position = Vector2(366, 141)
 
 [node name="Tree7" parent="Decoration" index="3"]
-position = Vector2(394, 149)
+position = Vector2(508, 75)
 
 [node name="Tree8" parent="Decoration" index="4"]
-position = Vector2(1117, 746)
+position = Vector2(577, 111)
 
 [node name="Tree9" parent="Decoration" index="5"]
-position = Vector2(1162, 769)
+position = Vector2(982, 759)
 
 [node name="Tree10" parent="Decoration" index="6"]
-position = Vector2(1227, 769)
+position = Vector2(1013, 782)
 
 [node name="Tree11" parent="Decoration" index="7"]
-position = Vector2(1202, 785)
+position = Vector2(1055, 780)
 
 [node name="Tree12" parent="Decoration" index="8"]
-position = Vector2(1364, 773)
+position = Vector2(1069, 804)
 
 [node name="Tree13" parent="Decoration" index="9"]
-position = Vector2(1141, 537)
+position = Vector2(1242, 820)
 
 [node name="Tree14" parent="Decoration" index="10"]
-position = Vector2(1304, 865)
+position = Vector2(1063, 546)
 
 [node name="Tree15" parent="Decoration" index="11"]
-position = Vector2(1061, 822)
+position = Vector2(1129, 555)
 
-[node name="Tree16" parent="Decoration" index="12" instance=ExtResource("3_kf1a5")]
-position = Vector2(1243, 999)
+[node name="Rock" parent="Decoration" index="12"]
+position = Vector2(-188, 336)
 
-[node name="Tree17" parent="Decoration" index="13" instance=ExtResource("3_kf1a5")]
-position = Vector2(1197, 993)
+[node name="Rock11" parent="Decoration" index="13"]
+position = Vector2(-249, 277)
 
-[node name="Tree18" parent="Decoration" index="14" instance=ExtResource("3_kf1a5")]
-position = Vector2(885, 1142)
+[node name="Rock2" parent="Decoration" index="14"]
+position = Vector2(-102, 362)
 
-[node name="Tree19" parent="Decoration" index="15" instance=ExtResource("3_kf1a5")]
-position = Vector2(915, 1170)
+[node name="Rock3" parent="Decoration" index="15"]
+position = Vector2(-178, 417)
 
-[node name="Tree20" parent="Decoration" index="16" instance=ExtResource("3_kf1a5")]
-position = Vector2(1052, 1252)
+[node name="Rock4" parent="Decoration" index="16"]
+position = Vector2(-280, 345)
 
-[node name="Tree21" parent="Decoration" index="17" instance=ExtResource("3_kf1a5")]
-position = Vector2(805, 1275)
+[node name="Rock5" parent="Decoration" index="17"]
+position = Vector2(625, 562)
 
-[node name="Tree22" parent="Decoration" index="18" instance=ExtResource("3_kf1a5")]
-position = Vector2(753, 1269)
+[node name="Rock6" parent="Decoration" index="18"]
+position = Vector2(773, 26)
 
-[node name="Tree23" parent="Decoration" index="19" instance=ExtResource("3_kf1a5")]
-position = Vector2(686, 1274)
+[node name="Rock7" parent="Decoration" index="19"]
+position = Vector2(1259, 190)
 
-[node name="Tree24" parent="Decoration" index="20" instance=ExtResource("3_kf1a5")]
-position = Vector2(721, 1309)
+[node name="Rock8" parent="Decoration" index="20"]
+position = Vector2(1571, 472)
 
-[node name="Tree25" parent="Decoration" index="21" instance=ExtResource("3_kf1a5")]
-position = Vector2(777, 1311)
+[node name="Rock9" parent="Decoration" index="21"]
+position = Vector2(1508, 1118)
 
-[node name="Tree26" parent="Decoration" index="22" instance=ExtResource("3_kf1a5")]
-position = Vector2(702, 1463)
-
-[node name="Tree27" parent="Decoration" index="23" instance=ExtResource("3_kf1a5")]
-position = Vector2(668, 1443)
-
-[node name="Tree28" parent="Decoration" index="24" instance=ExtResource("3_kf1a5")]
-position = Vector2(639, 1482)
-
-[node name="Tree29" parent="Decoration" index="25" instance=ExtResource("3_kf1a5")]
-position = Vector2(602, 1444)
-
-[node name="Tree30" parent="Decoration" index="26" instance=ExtResource("3_kf1a5")]
-position = Vector2(480, 1283)
-
-[node name="Tree31" parent="Decoration" index="27" instance=ExtResource("3_kf1a5")]
-position = Vector2(463, 1311)
-
-[node name="Tree32" parent="Decoration" index="28" instance=ExtResource("3_kf1a5")]
-position = Vector2(443, 1343)
-
-[node name="Tree33" parent="Decoration" index="29" instance=ExtResource("3_kf1a5")]
-position = Vector2(476, 1350)
-
-[node name="Tree34" parent="Decoration" index="30" instance=ExtResource("3_kf1a5")]
-position = Vector2(511, 1312)
-
-[node name="Tree35" parent="Decoration" index="31" instance=ExtResource("3_kf1a5")]
-position = Vector2(943, -146)
-
-[node name="Tree36" parent="Decoration" index="32" instance=ExtResource("3_kf1a5")]
-position = Vector2(994, -149)
-
-[node name="Tree37" parent="Decoration" index="33" instance=ExtResource("3_kf1a5")]
-position = Vector2(1041, -151)
-
-[node name="Tree38" parent="Decoration" index="34" instance=ExtResource("3_kf1a5")]
-position = Vector2(1098, -150)
-
-[node name="Tree39" parent="Decoration" index="35" instance=ExtResource("3_kf1a5")]
-position = Vector2(1151, -154)
-
-[node name="Tree40" parent="Decoration" index="36" instance=ExtResource("3_kf1a5")]
-position = Vector2(1209, -142)
-
-[node name="Tree41" parent="Decoration" index="37" instance=ExtResource("3_kf1a5")]
-position = Vector2(1270, -144)
-
-[node name="Tree42" parent="Decoration" index="38" instance=ExtResource("3_kf1a5")]
-position = Vector2(984, -115)
-
-[node name="Tree43" parent="Decoration" index="39" instance=ExtResource("3_kf1a5")]
-position = Vector2(1088, -91)
-
-[node name="Tree44" parent="Decoration" index="40" instance=ExtResource("3_kf1a5")]
-position = Vector2(1131, -107)
-
-[node name="Tree45" parent="Decoration" index="41" instance=ExtResource("3_kf1a5")]
-position = Vector2(1164, -83)
-
-[node name="Tree46" parent="Decoration" index="42" instance=ExtResource("3_kf1a5")]
-position = Vector2(1215, -107)
-
-[node name="Tree47" parent="Decoration" index="43" instance=ExtResource("3_kf1a5")]
-position = Vector2(1272, -85)
-
-[node name="Tree48" parent="Decoration" index="44" instance=ExtResource("3_kf1a5")]
-position = Vector2(1288, -34)
-
-[node name="Tree49" parent="Decoration" index="45" instance=ExtResource("3_kf1a5")]
-position = Vector2(1269, 5)
-
-[node name="Tree50" parent="Decoration" index="46" instance=ExtResource("3_kf1a5")]
-position = Vector2(1330, -67)
-
-[node name="Tree51" parent="Decoration" index="47" instance=ExtResource("3_kf1a5")]
-position = Vector2(1175, -20)
-
-[node name="Tree52" parent="Decoration" index="48" instance=ExtResource("3_kf1a5")]
-position = Vector2(1314, 73)
-
-[node name="Tree53" parent="Decoration" index="49" instance=ExtResource("3_kf1a5")]
-position = Vector2(1367, 102)
-
-[node name="Tree54" parent="Decoration" index="50" instance=ExtResource("3_kf1a5")]
-position = Vector2(1412, 108)
-
-[node name="Tree55" parent="Decoration" index="51" instance=ExtResource("3_kf1a5")]
-position = Vector2(1473, 116)
-
-[node name="Tree56" parent="Decoration" index="52" instance=ExtResource("3_kf1a5")]
-position = Vector2(1494, 134)
-
-[node name="Tree57" parent="Decoration" index="53" instance=ExtResource("3_kf1a5")]
-position = Vector2(1511, 158)
-
-[node name="Tree58" parent="Decoration" index="54" instance=ExtResource("3_kf1a5")]
-position = Vector2(1493, 196)
-
-[node name="Tree59" parent="Decoration" index="55" instance=ExtResource("3_kf1a5")]
-position = Vector2(1572, 145)
-
-[node name="Tree61" parent="Decoration" index="56" instance=ExtResource("3_kf1a5")]
-position = Vector2(1541, 89)
-
-[node name="Tree62" parent="Decoration" index="57" instance=ExtResource("3_kf1a5")]
-position = Vector2(1504, 54)
-
-[node name="Tree63" parent="Decoration" index="58" instance=ExtResource("3_kf1a5")]
-position = Vector2(1461, -20)
-
-[node name="Tree64" parent="Decoration" index="59" instance=ExtResource("3_kf1a5")]
-position = Vector2(1407, -36)
-
-[node name="Tree65" parent="Decoration" index="60" instance=ExtResource("3_kf1a5")]
-position = Vector2(1352, -26)
-
-[node name="Tree60" parent="Decoration" index="61" instance=ExtResource("3_kf1a5")]
-position = Vector2(1572, 229)
-
-[node name="Rock" parent="Decoration" index="62"]
-position = Vector2(-30, 302)
-
-[node name="Rock11" parent="Decoration" index="63"]
-position = Vector2(-47, 351)
-
-[node name="Rock2" parent="Decoration" index="64"]
-position = Vector2(-124, 304)
-
-[node name="Rock3" parent="Decoration" index="65"]
-position = Vector2(-150, 357)
-
-[node name="Rock4" parent="Decoration" index="66"]
-position = Vector2(676, 496)
-
-[node name="Rock5" parent="Decoration" index="67"]
-position = Vector2(969, 593)
-
-[node name="Rock6" parent="Decoration" index="68"]
-position = Vector2(779, 856)
-
-[node name="Rock7" parent="Decoration" index="69"]
-position = Vector2(311, 1023)
-
-[node name="Rock8" parent="Decoration" index="70"]
-position = Vector2(356, 1033)
-
-[node name="Rock9" parent="Decoration" index="71"]
-position = Vector2(324, 1044)
-
-[node name="Rock10" parent="Decoration" index="72"]
-position = Vector2(351, 1059)
-
-[node name="Rock12" parent="Decoration" index="73" instance=ExtResource("3_8lhfs")]
-position = Vector2(383, 1051)
-
-[node name="Rock13" parent="Decoration" index="74" instance=ExtResource("3_8lhfs")]
-position = Vector2(318, 1074)
-
-[node name="Rock14" parent="Decoration" index="75" instance=ExtResource("3_8lhfs")]
-position = Vector2(298, 1065)
-
-[node name="Rock15" parent="Decoration" index="76" instance=ExtResource("3_8lhfs")]
-position = Vector2(364, 1075)
-
-[node name="Rock16" parent="Decoration" index="77" instance=ExtResource("3_8lhfs")]
-position = Vector2(409, 1072)
+[node name="Rock10" parent="Decoration" index="22"]
+position = Vector2(311, 1581)
 
 [node name="Goblin" parent="." index="2"]
-y_sort_enabled = false
 position = Vector2(350, 62)
 
-[node name="Goblin2" parent="." index="3"]
-position = Vector2(1197, 729)
-
-[node name="Goblin3" parent="." index="4" instance=ExtResource("2_uma8f")]
+[node name="Goblin3" parent="." index="3" instance=ExtResource("2_uma8f")]
 light_mask = 2
 visibility_layer = 5
 position = Vector2(1001, 949)
-collision_mask = 5
 
-[node name="Goblin4" parent="." index="5" instance=ExtResource("2_uma8f")]
+[node name="Goblin4" parent="." index="4" instance=ExtResource("2_uma8f")]
 light_mask = 2
 visibility_layer = 5
 position = Vector2(1179, 1075)
-collision_mask = 5
+
+[node name="Goblin2" parent="." index="5"]
+position = Vector2(1048, 723)
 
 [node name="Knight" parent="." index="6"]
-position = Vector2(164, 365)
+position = Vector2(73, 446)
 
-[node name="Mushroom" parent="." index="8"]
+[node name="Decoration#Tree16" parent="." index="8" instance=ExtResource("3_kf1a5")]
+position = Vector2(1243, 999)
+
+[node name="Decoration#Tree17" parent="." index="9" instance=ExtResource("3_kf1a5")]
+position = Vector2(1197, 993)
+
+[node name="Decoration#Tree18" parent="." index="10" instance=ExtResource("3_kf1a5")]
+position = Vector2(885, 1142)
+
+[node name="Decoration#Tree19" parent="." index="11" instance=ExtResource("3_kf1a5")]
+position = Vector2(915, 1170)
+
+[node name="Decoration#Tree20" parent="." index="12" instance=ExtResource("3_kf1a5")]
+position = Vector2(1052, 1252)
+
+[node name="Decoration#Tree21" parent="." index="13" instance=ExtResource("3_kf1a5")]
+position = Vector2(805, 1275)
+
+[node name="Decoration#Tree22" parent="." index="14" instance=ExtResource("3_kf1a5")]
+position = Vector2(753, 1269)
+
+[node name="Decoration#Tree23" parent="." index="15" instance=ExtResource("3_kf1a5")]
+position = Vector2(686, 1274)
+
+[node name="Decoration#Tree24" parent="." index="16" instance=ExtResource("3_kf1a5")]
+position = Vector2(721, 1309)
+
+[node name="Decoration#Tree25" parent="." index="17" instance=ExtResource("3_kf1a5")]
+position = Vector2(777, 1311)
+
+[node name="Decoration#Tree26" parent="." index="18" instance=ExtResource("3_kf1a5")]
+position = Vector2(702, 1463)
+
+[node name="Decoration#Tree27" parent="." index="19" instance=ExtResource("3_kf1a5")]
+position = Vector2(668, 1443)
+
+[node name="Decoration#Tree28" parent="." index="20" instance=ExtResource("3_kf1a5")]
+position = Vector2(639, 1482)
+
+[node name="Decoration#Tree29" parent="." index="21" instance=ExtResource("3_kf1a5")]
+position = Vector2(602, 1444)
+
+[node name="Decoration#Tree30" parent="." index="22" instance=ExtResource("3_kf1a5")]
+position = Vector2(480, 1283)
+
+[node name="Decoration#Tree31" parent="." index="23" instance=ExtResource("3_kf1a5")]
+position = Vector2(463, 1311)
+
+[node name="Decoration#Tree32" parent="." index="24" instance=ExtResource("3_kf1a5")]
+position = Vector2(443, 1343)
+
+[node name="Decoration#Tree33" parent="." index="25" instance=ExtResource("3_kf1a5")]
+position = Vector2(476, 1350)
+
+[node name="Decoration#Tree34" parent="." index="26" instance=ExtResource("3_kf1a5")]
+position = Vector2(511, 1312)
+
+[node name="Decoration#Tree35" parent="." index="27" instance=ExtResource("3_kf1a5")]
+position = Vector2(943, -146)
+
+[node name="Decoration#Tree36" parent="." index="28" instance=ExtResource("3_kf1a5")]
+position = Vector2(994, -149)
+
+[node name="Decoration#Tree37" parent="." index="29" instance=ExtResource("3_kf1a5")]
+position = Vector2(1041, -151)
+
+[node name="Decoration#Tree38" parent="." index="30" instance=ExtResource("3_kf1a5")]
+position = Vector2(1098, -150)
+
+[node name="Decoration#Tree39" parent="." index="31" instance=ExtResource("3_kf1a5")]
+position = Vector2(1151, -154)
+
+[node name="Decoration#Tree40" parent="." index="32" instance=ExtResource("3_kf1a5")]
+position = Vector2(1209, -142)
+
+[node name="Decoration#Tree41" parent="." index="33" instance=ExtResource("3_kf1a5")]
+position = Vector2(1270, -144)
+
+[node name="Decoration#Tree42" parent="." index="34" instance=ExtResource("3_kf1a5")]
+position = Vector2(984, -115)
+
+[node name="Decoration#Tree43" parent="." index="35" instance=ExtResource("3_kf1a5")]
+position = Vector2(1088, -91)
+
+[node name="Decoration#Tree44" parent="." index="36" instance=ExtResource("3_kf1a5")]
+position = Vector2(1131, -107)
+
+[node name="Decoration#Tree45" parent="." index="37" instance=ExtResource("3_kf1a5")]
+position = Vector2(1164, -83)
+
+[node name="Decoration#Tree46" parent="." index="38" instance=ExtResource("3_kf1a5")]
+position = Vector2(1215, -107)
+
+[node name="Decoration#Tree47" parent="." index="39" instance=ExtResource("3_kf1a5")]
+position = Vector2(1272, -85)
+
+[node name="Decoration#Tree48" parent="." index="40" instance=ExtResource("3_kf1a5")]
+position = Vector2(1288, -34)
+
+[node name="Decoration#Tree49" parent="." index="41" instance=ExtResource("3_kf1a5")]
+position = Vector2(1269, 5)
+
+[node name="Decoration#Tree50" parent="." index="42" instance=ExtResource("3_kf1a5")]
+position = Vector2(1330, -67)
+
+[node name="Decoration#Tree51" parent="." index="43" instance=ExtResource("3_kf1a5")]
+position = Vector2(1175, -20)
+
+[node name="Decoration#Tree52" parent="." index="44" instance=ExtResource("3_kf1a5")]
+position = Vector2(1314, 73)
+
+[node name="Decoration#Tree53" parent="." index="45" instance=ExtResource("3_kf1a5")]
+position = Vector2(1367, 102)
+
+[node name="Decoration#Tree54" parent="." index="46" instance=ExtResource("3_kf1a5")]
+position = Vector2(1412, 108)
+
+[node name="Decoration#Tree55" parent="." index="47" instance=ExtResource("3_kf1a5")]
+position = Vector2(1473, 116)
+
+[node name="Decoration#Tree56" parent="." index="48" instance=ExtResource("3_kf1a5")]
+position = Vector2(1494, 134)
+
+[node name="Decoration#Tree57" parent="." index="49" instance=ExtResource("3_kf1a5")]
+position = Vector2(1511, 158)
+
+[node name="Decoration#Tree58" parent="." index="50" instance=ExtResource("3_kf1a5")]
+position = Vector2(1493, 196)
+
+[node name="Decoration#Tree59" parent="." index="51" instance=ExtResource("3_kf1a5")]
+position = Vector2(1572, 145)
+
+[node name="Decoration#Tree61" parent="." index="52" instance=ExtResource("3_kf1a5")]
+position = Vector2(1541, 89)
+
+[node name="Decoration#Tree62" parent="." index="53" instance=ExtResource("3_kf1a5")]
+position = Vector2(1504, 54)
+
+[node name="Decoration#Tree63" parent="." index="54" instance=ExtResource("3_kf1a5")]
+position = Vector2(1461, -20)
+
+[node name="Decoration#Tree64" parent="." index="55" instance=ExtResource("3_kf1a5")]
+position = Vector2(1407, -36)
+
+[node name="Decoration#Tree65" parent="." index="56" instance=ExtResource("3_kf1a5")]
+position = Vector2(1352, -26)
+
+[node name="Decoration#Tree60" parent="." index="57" instance=ExtResource("3_kf1a5")]
+position = Vector2(1572, 229)
+
+[node name="Decoration#Rock12" parent="." index="58" instance=ExtResource("3_8lhfs")]
+position = Vector2(662, 972)
+
+[node name="Decoration#Rock13" parent="." index="59" instance=ExtResource("3_8lhfs")]
+position = Vector2(597, 995)
+
+[node name="Decoration#Rock14" parent="." index="60" instance=ExtResource("3_8lhfs")]
+position = Vector2(577, 986)
+
+[node name="Decoration#Rock15" parent="." index="61" instance=ExtResource("3_8lhfs")]
+position = Vector2(643, 996)
+
+[node name="Decoration#Rock16" parent="." index="62" instance=ExtResource("3_8lhfs")]
+position = Vector2(688, 993)
+
+[node name="Mushroom" parent="." index="63"]
 position = Vector2(606, 1282)
 
 [node name="Label" parent="Mushroom" index="3"]
@@ -283,3 +278,5 @@ visible = false
 
 [node name="Label2" parent="Mushroom" index="4"]
 visible = false
+
+[editable path="Terrain2"]

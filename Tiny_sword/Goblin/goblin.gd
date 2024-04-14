@@ -67,6 +67,7 @@ func update_health(value: int) -> void:
 	if health <= 0 :
 		can_die = true
 		animation.play("death")
+		dust.emitting = false
 		return
 	
 	aux_animation_player.play("hit")
@@ -88,7 +89,7 @@ func _on_animation_finished(anim_name: String):
 		transition_screen.player_score += score
 		get_tree().call_group("Level", "update_score", transition_screen.player_score)
 		get_tree().call_group("Level", "increase_kill_count")
-		queue_free()
+		#queue_free()
 		
 func spawn_sfx(sfx_path: String) -> void:
 	var sfx = Audio_Template.instantiate()
